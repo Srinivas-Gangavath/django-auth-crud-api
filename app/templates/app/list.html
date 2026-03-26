@@ -1,0 +1,27 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<h2>Items</h2>
+
+<div class="add-btn-container">
+    <a class="add-btn" href="{% url 'item_create' %}">+ Add Item</a>
+</div>
+
+<div class="card-container">
+    {% for item in items %}
+        <div class="card">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+
+            {% if item.user == request.user %}
+                <div class="actions">
+                    <a class="edit" href="{% url 'item_update' item.id %}">Edit</a>
+                    <a class="delete" href="{% url 'item_delete' item.id %}">Delete</a>
+                </div>
+            {% endif %}
+        </div>
+    {% empty %}
+        <p>No items found.</p>
+    {% endfor %}
+</div>
+{% endblock %}

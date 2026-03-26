@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.logout-form {
+    display: inline;
+}
+
+.logout-form button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* BUTTON */
+.btn {
+    background: #3498db;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.edit {
+    color: #2980b9;
+}
+
+.delete {
+    color: red;
+}
+
+/* FORM */
+.form-box {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Google Button */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #4285F4;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.google-btn:hover {
+    background: #357ae8;
+}
+
+/* FIXED ICON SIZE */
+.google-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+.info-text {
+    margin: 15px 0;
+    color: #555;
+}
+
+.back-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    color: #000;
+}
+
+.divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Form Box */
+.form-box {
+    background: #fff;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;   /* 🔥 center everything */
+}
+
+/* Heading */
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form fields */
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;   /* labels aligned properly */
+}
+
+/* Input fields */
+.form-box input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Add Button Container */
+.add-btn-container {
+    margin: 20px 0;
+    text-align: left;
+}
+
+/* FIX: Override full width */
+.add-btn {
+    display: inline-block;
+    width: auto !important;   /* 🔥 key fix */
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+/* Danger Button */
+.danger-btn {
+    background-color: #e53935;
+    color: white;
+}
+
+.danger-btn:hover {
+    background-color: #c62828;
+}

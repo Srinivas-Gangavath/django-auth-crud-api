@@ -1,0 +1,25 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="login-container">
+    <div class="form-box">
+
+        <h2>Sign in with Google</h2>
+
+        <p class="info-text">
+            You are about to sign in using your Google account.
+        </p>
+
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn google-btn">
+                Continue with Google
+            </button>
+        </form>
+
+        <a href="/login/" class="back-link">← Back to Login</a>
+
+    </div>
+</div>
+{% endblock %}

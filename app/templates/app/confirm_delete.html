@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<div class="form-box">
+    <h2>Delete Item</h2>
+    <p>Are you sure?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn danger-btn">Delete</button>
+    </form>
+</div>
+{% endblock %}

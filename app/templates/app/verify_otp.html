@@ -1,0 +1,22 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<div class="login-container">
+    <div class="form-box">
+
+        <h2>Verify OTP</h2>
+
+        <p class="info-text">
+            We’ve sent a one-time password (OTP) to your registered email.  
+            Please enter it below to continue.
+        </p>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn primary-btn">Verify & Login</button>
+        </form>
+
+    </div>
+</div>
+{% endblock %}
